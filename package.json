@@ -1,0 +1,25 @@
+{
+  "name": "graph-mapper",
+  "version": "0.1.0",
+  "description": "A two-way mapper for an object graph.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "mocha lib/*.spec.js"
+  },
+  "keywords": [
+    "two-way",
+    "object",
+    "mapper"
+  ],
+  "author": "Shane Kuester",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
