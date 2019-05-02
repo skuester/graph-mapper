@@ -1,10 +1,11 @@
 {
   "name": "graph-mapper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A two-way mapper for an object graph.",
   "main": "index.js",
-  "directories": {
-    "example": "example"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skuester/graph-mapper.git"
   },
   "scripts": {
     "test": "mocha lib/*.spec.js"
