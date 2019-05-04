@@ -8,7 +8,8 @@
     "url": "https://github.com/skuester/graph-mapper.git"
   },
   "scripts": {
-    "test": "mocha lib/*.spec.js"
+    "test": "mocha lib/*.spec.js",
+    "test:watch": "mocha -w lib/*.js lib/*.spec.js"
   },
   "keywords": [
     "two-way",
