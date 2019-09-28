@@ -1,4 +1,5 @@
 // LAST RUN
+// MANUAL MAPPING (comparison) - manual mapper x 817,554,462 ops/sec ±1.57% (82 runs sampled)
 // BASELINE - read x 661,519 ops/sec ±0.18% (89 runs sampled)
 // AFTER pipes added - read x 655,999 ops/sec ±0.24% (93 runs sampled)
 const Benchmark = require('benchmark')
@@ -32,6 +33,14 @@ const mapper = new GraphMapper({
 })
 
 
+function manual_mapper(source) {
+	return {
+		first: source.FirstName,
+		last: source.LastName,
+		name: source.FirstName + ' ' + source.LastName,
+	}
+}
+
 
 
 // add tests
@@ -41,9 +50,9 @@ suite
 })
 
 
-// .add('String#indexOf', function() {
-//   'Hello World!'.indexOf('o') > -1;
-// })
+.add('manual mapper', function() {
+  manual_mapper(source)
+})
 
 
 
