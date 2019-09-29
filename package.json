@@ -1,6 +1,6 @@
 {
   "name": "graph-mapper",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A two-way mapper for an object graph.",
   "main": "index.js",
   "repository": {
@@ -19,9 +19,10 @@
   "author": "Shane Kuester",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "mocha": "^6.1.4"
   }
 }
