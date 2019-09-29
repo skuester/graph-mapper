@@ -3,7 +3,7 @@
 // BASELINE - read x 661,519 ops/sec ±0.18% (89 runs sampled)
 // AFTER pipes added - read x 655,999 ops/sec ±0.24% (93 runs sampled)
 const Benchmark = require('benchmark')
-const { GraphMapper } = require('../lib/graph-mapper')
+const GraphMapper = require('../index')
 
 const suite = new Benchmark.Suite
 

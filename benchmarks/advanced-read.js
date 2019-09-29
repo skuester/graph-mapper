@@ -1,5 +1,6 @@
 const Benchmark = require('benchmark')
-const { GraphMapper, helpers } = require('../lib/graph-mapper')
+const GraphMapper = require('../index')
+const helpers = require('../helpers')
 
 const suite = new Benchmark.Suite
 

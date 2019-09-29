@@ -1,7 +1,7 @@
 // LAST RUN
 // write x 514,324 ops/sec ±0.42% (91 runs sampled)
 const Benchmark = require('benchmark')
-const { GraphMapper } = require('../lib/graph-mapper')
+const GraphMapper = require('../index')
 
 const suite = new Benchmark.Suite
 
